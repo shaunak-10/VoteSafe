@@ -1,0 +1,28 @@
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Navbar styles */
+
+/* Main content styles */
+.main-content {
+  padding: 20px; /* Adjust padding to create space between navbar and content */
+  margin-top: 60px; /* Add margin to the top to prevent overlap with navbar */
+}
+
+.election-content {
+  padding: 20px;
+  margin-top: -20px; /* Adjust padding to create space between navbar and content */
+}
+
+.container {
+  background-color: lightcyan;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.dashboard-container {
+  background-color: #f0fffe;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

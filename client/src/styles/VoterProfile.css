@@ -1,0 +1,135 @@
+/* VoterProfile.css */
+
+.dialog-content {
+  padding: 24px; /* Increase padding for better spacing */
+}
+
+.detail-label {
+  font-weight: bold;
+  margin-bottom: 8px; /* Add margin bottom for spacing between labels and content */
+}
+
+.election-details {
+  margin-bottom: 20px;
+}
+
+.candidate-list {
+  padding: 0;
+  margin: 0; /* Reset margin to avoid default spacing */
+  list-style-type: none;
+}
+
+.candidate-list li {
+  margin-bottom: 8px;
+  padding-left: 15px; /* Add left padding for space between bullet point and text */
+  position: relative; /* Set position relative for absolute positioning of the bullet point */
+}
+
+.candidate-list li::before {
+  content: "\2022"; /* Unicode character for bullet point */
+  color: #007bff; /* Color of the bullet point */
+  font-size: 20px; /* Adjust the size of the bullet point */
+  position: absolute;
+  left: 0; /* Position the bullet point at the leftmost side */
+  top: 50%; /* Align the bullet point vertically */
+  transform: translateY(-50%); /* Center the bullet point vertically */
+}
+
+.create-election-button {
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.election-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  margin-bottom: 20px;
+}
+
+.date-time-picker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+.form-file-button {
+  margin-top: 20px;
+}
+
+.form-file {
+  display: flex;
+}
+
+.form-button {
+  margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+  .date-time-picker {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-button {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}
+
+.form-button:hover {
+  background-color: #0056b3;
+}
+
+.candidate-radio-group {
+  margin-top: 5px;
+}
+.custom-alert {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.rainbow-text {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+.rainbow-text-small {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    indigo,
+    violet
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
+}

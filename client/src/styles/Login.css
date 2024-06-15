@@ -1,0 +1,159 @@
+/* Login.css */
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  justify-content: center;
+}
+
+.radio-group {
+  margin-bottom: 20px;
+}
+
+.radio-label {
+  font-weight: bold;
+}
+
+.radio-options {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.radio-option {
+  margin-right: 20px;
+}
+
+.MuiInputLabel-asterisk {
+  display: none;
+}
+
+.MuiFormControlLabel-asterisk {
+  display: none;
+}
+
+/* Add a custom indicator for required fields */
+
+.login-background {
+  background-image: url("../assets/ancientGreece.jpg"); /* Replace 'your-background-image.jpg' with your actual image path */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.login-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust the opacity as needed */
+}
+
+.login-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.login-container {
+  width: 440px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust the opacity as needed */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+.form-title {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #333;
+  text-align: center;
+}
+
+.signup-link {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+
+.forgot-password-link {
+  margin-bottom: 20px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-title h1 {
+  font-size: 32px;
+  color: #4a90e2;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.page-title h1:hover {
+  color: #357abd;
+  transition: color 0.3s ease-in-out;
+}
+
+.upload-container {
+  display: flex;
+  align-items: center;
+}
+
+.upload-success {
+  margin-left: 5px;
+  color: #3873cb;
+}
+
+.file-upload-success {
+  margin-top: 28px;
+  margin-left: 10px;
+  color: #3873cb;
+}

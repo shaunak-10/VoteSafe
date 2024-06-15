@@ -1,0 +1,98 @@
+.ballot-main-content {
+  background-color: #f0fffe;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.ballot-main {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ballot-card {
+  margin-top: 20px;
+  min-width: 600px; /* Increased width for the card */
+  background-color: lightcyan;
+  padding: 40px; /* Increased padding for better spacing */
+  text-align: center;
+  border-radius: 20px; /* Increased border-radius for smoother edges */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.ballot-card:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.candidate {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.vote-buttons {
+  display: flex;
+  gap: 10px; /* Adjust the gap between buttons */
+}
+
+.vote-button {
+  padding: 10px; /* Add padding to make the buttons look less thick */
+}
+
+.candidate-info {
+  display: flex;
+  align-items: center;
+  margin-right: 20px; /* Increased margin for better spacing */
+}
+
+.ballot-avatar {
+  margin-right: 20px; /* Increased margin for better spacing */
+}
+
+.progress-bar {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center align items horizontally */
+  width: 100%;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.progress-bar-container {
+  width: 50%;
+  height: 20px;
+  background-color: #c9ccd1;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; /* Reduced margin */
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #3873cb; /* Blue fill */
+  border-radius: 10px;
+}
+
+.progress-percentage {
+  color: #3873cb; /* Blue color */
+  padding: 5px; /* Reduced padding */
+  font-weight: bold; /* Bold font */
+}

@@ -1,0 +1,14 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Start with a downward translateY */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateY(0); /* End with translateY reset */
+  }
+}
+
+.card {
+  animation: fadeIn 0.5s ease-in-out;
+}

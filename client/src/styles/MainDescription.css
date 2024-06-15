@@ -1,0 +1,63 @@
+.main-description-container {
+  margin-bottom: 100px;
+  margin-top: 75px;
+}
+
+.main-description {
+  color: #3873cb;
+  padding: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.sub-main-description {
+  color: #3873cb;
+  padding-left: 10px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Start with a downward translateY */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateY(0); /* End with translateY reset */
+  }
+}
+
+/* Apply the animation to the image */
+.main-image {
+  width: 97%;
+  border-radius: 8px;
+  animation: fadeIn 0.5s ease-in-out; /* Apply the fadeIn animation */
+}
+
+.dashboard-table {
+  animation: fadeIn 0.5s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: lightcyan;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.user-profile-info {
+  padding: 8px 12px;
+  margin: 8px 5px;
+  font-size: 18px;
+  color: #3873cb;
+  background-color: #c7e7fa;
+  border-radius: 6px;
+  display: inline-block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

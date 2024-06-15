@@ -1,0 +1,63 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+    transform: translateY(20px); /* Start with a downward translateY */
+  }
+  100% {
+    opacity: 1; /* End with opacity 1 */
+    transform: translateY(0); /* End with translateY reset */
+  }
+}
+.result-main-content {
+  margin-top: 60px;
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #f0fffe;
+}
+
+.result-table {
+  width: 48%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: lightcyan;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.winner-info {
+  width: 48%;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: lightcyan;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.result-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Result.css */
+.piechart {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.chart-container {
+  width: 1000px;
+  max-height: 100000px; /* Maximum height */
+  overflow-y: auto; /* Add scrollbar if needed */
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  overflow: hidden; /* Hide overflow */
+  background-color: lightcyan;
+  display: flex;
+  justify-content: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
